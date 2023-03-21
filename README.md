@@ -10,16 +10,36 @@ REQUIREMENT
 ------------
 - PHP 7.4
 
+INSTALATION
+------------
+
+### Install via Docker
+
+If you haven't [Docker](https://www.docker.com/) installed yet, you can quickly install it following the [Docker Guide](https://www.docker.com/get-started).
+You also need to install [Docker Compose](https://docs.docker.com/compose/install/) for create the containers.
+
+Creating the image.
+
+~~~
+docker-compose build
+~~~
+
+Initializing the containers.
+
+~~~
+docker-compose up -d
+~~~
+
 USAGE
 -------
+Use the following commands into the console.
+
 ### Access to bash
-Use the following command into the console
 ~~~
 docker exec -it cuantic-test-phpfpm-1 /bin/sh
 ~~~
 
 ### Run the test
-Use the following command into the console
 ~~~
 php test.php
 ~~~
