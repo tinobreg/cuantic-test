@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+  phpfpm:
+    build:
+      dockerfile: Dockerfile-fpm
+      context: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/app
