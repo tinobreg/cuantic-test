@@ -39,7 +39,14 @@ Use the following commands into the console.
 docker exec -it cuantic-test-phpfpm-1 /bin/sh
 ~~~
 
-### Run the test
+### Run the test 1
 ~~~
 php test.php
+~~~
+
+
+### Run the test 2
+After running the test, you'll see the results files in "output" folder.
+~~~
+php index.php
 ~~~

@@ -4,8 +4,8 @@ require('parser/CSVParser.php');
 
 use parser\CSVParser;
 
-$filename = "result.csv";
-$parser = new CSVParser($filename);
-$parser->readCSVFile();
+
+$parser = new CSVParser();
+$parser->readCSVFile("result.csv");
 $parser->createCSVFile();
 $parser->createErrorsJson();
